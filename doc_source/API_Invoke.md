@@ -2,7 +2,7 @@
 
 Invokes a specific Lambda function\. For an example, see [Create the Lambda Function and Test It Manually](http://docs.aws.amazon.com/lambda/latest/dg/with-dynamodb-create-function.html#with-dbb-invoke-manually)\. 
 
-If you are using the versioning feature, you can invoke the specific function version by providing function version or alias name that is pointing to the function version using the `Qualifier` parameter in the request\. If you don't provide the `Qualifier` parameter, the `$LATEST` version of the Lambda function is invoked\. Invocations occur at least once in response to an event and functions must be idempotent to handle this\. For information about the versioning feature, see [AWS Lambda Function Versioning and Aliases](http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\. 
+If you are using the versioning feature, you can invoke the specific function version by providing function version or alias name that is pointing to the function version using the `Qualifier` parameter in the request\. If you don't provide the `Qualifier` parameter, the `$LATEST` version of the Lambda function is invoked\. Invocations occur at least once in response to an `Event` invocation type and functions must be idempotent to handle this\. For information about the versioning feature, see [AWS Lambda Function Versioning and Aliases](http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\. 
 
 This operation requires permission for the `lambda:InvokeFunction` action\.
 
